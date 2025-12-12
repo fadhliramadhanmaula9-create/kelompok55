@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budaya Indonesia</title>
+
+    <!-- AOS ANIMATION -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ====================== LOADING SCREEN ====================== -->
+<div id="loadingScreen">
+    <div class="batik-spinner"></div>
+    <p>Memuat Budaya Nusantara...</p>
+</div>
+
+<!-- ====================== NAVBAR ====================== -->
+<nav class="navbar">
+    <h2>BUDAYA NUSANTARA</h2>
+    <div class="nav-links" id="navLinks">
+        <a href="#tesis">Tesis</a>
+        <a href="#gallery">Gallery</a>
+        <a href="musik">Musik</a>
+        <a href="contact">Contact</a>
+    </div>
+    <span id="menu-toggle" class="menu-toggle">☰</span>
+    <button id="darkModeToggle" class="dark-btn">🌙</button>
+</nav>
+
+<!-- ====================== FLOATING MENU ====================== -->
+<div class="floating-menu">
+    <a href="#tesis" class="nav-btn">Tesis</a>
+    <a href="#gallery" class="nav-btn">Gallery</a>
+    <a href="#contact" class="nav-btn">Contact</a>
+</div>
+
+<!-- ====================== HERO ====================== -->
+<section class="hero">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+        <h1 class="hero-title">BUDAYA INDONESIA</h1>
+        <p class="hero-subtitle">Eksplorasi budaya dan keindahan alam</p>
+        <a href="#tesis" class="hero-btn btn-primary">Mulai Jelajahi</a>
+    </div>
+</section>
+
+
+<!-- ====================== TESIS KEBUDAYAAN INDONESIA ====================== -->
+<section id="tesis" class="tesis-section" data-aos="fade-up">
+    <h2>Kebudayaan Indonesia</h2>
+    <p class="tesis-desc">
+        Kebudayaan Indonesia adalah hasil dari interaksi panjang antara etnis, lingkungan, dan sejarah yang membentuk identitas kolektif bangsa. 
+        Keberagaman budaya ini tidak hanya terlihat pada seni, musik, rumah adat, senjata tradisional, dan upacara adat, tetapi juga pada nilai-nilai 
+        sosial seperti gotong royong, musyawarah, toleransi, dan rasa kebersamaan. Dalam konteks modern, budaya Indonesia menghadapi tantangan globalisasi, 
+        perubahan teknologi, serta pergeseran nilai generasi muda, namun tetap memiliki potensi besar untuk berkembang melalui pelestarian, pendidikan, 
+        dan inovasi berbasis tradisi. Tesis ini menegaskan bahwa kebudayaan Indonesia bukan hanya warisan masa lalu, tetapi fondasi masa depan yang berkelanjutan.
+    </p>
+
+    <div class="tesis-points">
+        <div class="tesis-card" data-aos="fade-up" data-aos-delay="100">
+            <h3>1. Kebudayaan sebagai Identitas Bangsa</h3>
+            <p>
+                Beragamnya budaya dari Sabang sampai Merauke menciptakan identitas nasional yang kuat. Setiap daerah berkontribusi pada jati diri bangsa Indonesia.
+            </p>
+        </div>
+
+        <div class="tesis-card" data-aos="fade-up" data-aos-delay="200">
+            <h3>2. Interaksi Tradisi dan Modernitas</h3>
+            <p>
+                Kebudayaan berkembang seiring waktu. Inovasi digital dan teknologi harus bersinergi dengan nilai-nilai tradisional agar budaya tetap relevan.
+            </p>
+        </div>
+
+        <div class="tesis-card" data-aos="fade-up" data-aos-delay="300">
+            <h3>3. Pelestarian sebagai Tanggung Jawab Bersama</h3>
+            <p>
+                Pelestarian budaya memerlukan kolaborasi masyarakat, pemerintah, dan generasi muda. Edukasi dan dokumentasi digital berperan sangat penting.
+            </p>
+        </div>
+
+        <div class="tesis-card" data-aos="fade-up" data-aos-delay="400">
+            <h3>4. Budaya sebagai Modal Pembangunan</h3>
+            <p>
+                Seni, musik, kuliner, wisata adat, dan kreativitas lokal dapat menjadi kekuatan ekonomi dan daya tarik internasional.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<!-- ====================== SEARCH + FILTER ====================== -->
+<section class="search-section">
+    <input type="text" id="searchBar" placeholder="Cari budaya...">
+
+    <div class="category-filter">
+        <button class="cat-btn active" data-category="all">Semua</button>
+        <button class="cat-btn" data-category="seni">Seni</button>
+        <button class="cat-btn" data-category="rumahadat">Rumah Adat</button>
+        <button class="cat-btn" data-category="musik">Musik</button>
+        <button class="cat-btn" data-category="senjata">Senjata</button>
+        <button class="cat-btn" data-category="upacara">Upacara</button>
+    </div>
+</section>
+
+<!-- ====================== GALLERY ====================== -->
+<section id="gallery" class="gallery-grid">
+
+    <div class="card" data-title="Tari Kecak" data-category="seni" onclick="openPopup('Tari Kecak','Tari Kecak adalah tarian tradisional Bali yang menampilkan sekelompok penari pria duduk melingkar sambil mengucapkan “cak” secara ritmis, menggambarkan cerita Ramayana tanpa musik gamelan, melainkan mengandalkan vokal kolektif dan gerakan tangan yang dramatis.')" data-aos="fade-up">
+        <img src="tarikecak.jpg">
+        <h3>Tari Kecak</h3>
+    </div>
+
+    <div class="card" data-title="Rumah Honai" data-category="rumahadat" onclick="openPopup('Rumah Honai','Rumah Honai adalah rumah tradisional suku Dani di Papua berbentuk bulat dengan atap dari ilalang yang tinggi dan runcing, berfungsi sebagai tempat tinggal dan simbol budaya, dirancang untuk hangat di iklim pegunungan dingin.')" data-aos="fade-up" data-aos-delay="100">
+        <img src="RUMAHHONAI.JPG">
+        <h3>Rumah Honai</h3>
+    </div>
+
+    <div class="card" data-title="Angklung" data-category="musik" onclick="openPopup('Angklung','Angklung adalah alat musik tradisional Indonesia, khususnya dari Jawa Barat, yang terbuat dari bambu dan dimainkan dengan digoyangkan sehingga menghasilkan bunyi nada tertentu.')" data-aos="fade-up" data-aos-delay="200">
+        <img src="ANGKLUNG.JPG">
+        <h3>Angklung</h3>
+    </div>
+
+    <div class="card" data-title="Keris" data-category="senjata" onclick="openPopup('Keris','Keris adalah senjata tradisional Indonesia berupa belati dengan bilah bergelombang atau lurus, yang juga memiliki nilai simbolis dan spiritual sebagai pusaka atau penanda status sosial.')" data-aos="fade-up" data-aos-delay="300">
+        <img src="KERIS.JPG">
+        <h3>Keris</h3>
+    </div>
+    
+    <div class="card" data-title="Reog Ponorogo" data-category="seni" onclick="openPopup('Reog Ponorogo','Reog Ponorogo adalah kesenian tradisional dari Ponorogo, Jawa Timur, yang menampilkan tarian, musik, dan atraksi topeng besar berbentuk kepala singa (Barong) dengan penari yang menanggungnya di atas bahu, biasanya diiringi musik gamelan dan tari-tarian.')" data-aos="fade-up">
+        <img src="reog.jpg">
+        <h3>Reog Ponorogo</h3>
+    </div>
+
+    <div class="card" data-title="Rumah Tongkonan" data-category="rumahadat" onclick="openPopup('Rumah Tongkonan','Rumah Tongkonan adalah rumah adat suku Toraja di Sulawesi Selatan, berbentuk panjang dengan atap melengkung seperti perahu terbalik, berfungsi sebagai tempat tinggal keluarga serta pusat upacara adat dan simbol status sosial.')" data-aos="fade-up" data-aos-delay="100">
+        <img src="RUMAHTONGKONANTORAJA.JPG">
+        <h3>Ruumah Tongkonan</h3>
+    </div>
+
+    <div class="card" data-title="Tifa" data-category="musik" onclick="openPopup('Tifa','Tifa adalah alat musik tradisional Papua berupa gendang tabung yang terbuat dari kayu dan kulit binatang, dimainkan dengan dipukul untuk mengiringi tarian atau upacara adat.')" data-aos="fade-up" data-aos-delay="200">
+        <img src="tifa.jpg">
+        <h3>Tifa</h3>
+    </div>
+
+    <div class="card" data-title="Kujang" data-category="senjata" onclick="openPopup('Kujang','Kujang adalah senjata tradisional Sunda berbentuk unik, berfungsi sebagai alat perang dan simbol keberanian serta spiritualitas.')" data-aos="fade-up" data-aos-delay="300">
+        <img src="KUJANG.JPG">
+        <h3>Kujang</h3>
+    </div>
+
+    <div class="card" data-title="Tari kuda lumping" data-category="seni" onclick="openPopup('Tari kuda lumping','Kuda Lumping adalah kesenian tradisional Jawa berupa tarian dengan penari yang menunggang kuda tiruan dari anyaman bambu, biasanya diiringi musik gamelan atau angklung, dan sering menampilkan atraksi trance atau magis.')" data-aos="fade-up">
+        <img src="tari kuda lumping.jpg">
+        <h3>Tari Kuda Lumping</h3>
+    </div>
+
+    <div class="card" data-title="Ngaben" data-category="Upacara" onclick="openPopup('Upacara ngaben','Upacara Ngaben adalah ritual kremasi tradisional masyarakat Bali yang bertujuan membebaskan roh orang yang meninggal agar dapat kembali ke alam roh dan dilahirkan kembali. Upacara ini biasanya diwarnai prosesi besar dengan arak-arakan jenazah yang dihias, patung sapi atau lembu dari bambu, dan pembakaran di krematorium, disertai doa serta musik gamelan Bali. Ngaben mencerminkan kepercayaan Hindu Bali tentang siklus kehidupan dan reinkarnasi.')" data-aos="fade-up" data-aos-delay="100">
+        <img src="ngaben.jpg">
+        <h3>Ngaben</h3>
+    </div>
+
+    <div class="card" data-title="Sasando" data-category="musik" onclick="openPopup('Sasando','Sasando adalah alat musik petik tradisional (kordofon) yang berasal dari Pulau Rote, Nusa Tenggara Timur (NTT). Alat musik ini memiliki bentuk yang sangat khas, di mana dawai-dawai direntangkan di atas tabung bambu dan suaranya diperbesar oleh wadah resonansi berupa anyaman daun lontar yang berbentuk seperti kipas. Nama')" data-aos="fade-up" data-aos-delay="200">
+        <img src="sasando.jpg">
+        <h3>Sasando</h3>
+    </div>
+
+    <div class="card" data-title="Lukisan Wayang" data-category="seni" onclick="openPopup('Lukisan Wayang','Lukisan Wayang adalah seni rupa tradisional dari Bali dan Jawa yang menggambarkan adegan serta tokoh dari epos seperti Mahabharata dan Ramayana. Ciri utamanya adalah penggambaran dua dimensi dengan garis tegas yang')" data-aos="fade-up" data-aos-delay="300">
+        <img src="lukisanwayang.jpg">
+        <h3>Lukisan Wayang</h3>
+    </div>
+
+    <div class="card" data-title="Pencak Silat" data-category="seni" onclick="openPopup('pencak Silat','Pencak Silat adalah seni bela diri dan olahraga tradisional dari Nusantara (terutama Indonesia). Intinya mencakup empat pilar: bela diri, seni, olahraga, dan mental-spiritual. Tekniknya sangat beragam, mengandalkan ketangkasan dan keselarasan tubuh untuk menyerang dan bertahan.')" data-aos="fade-up">
+        <img src="pencak.jpg">
+        <h3>Pencak Silat</h3>
+    </div>
+
+    <div class="card" data-title="Tenun Ikat" data-category="seni" onclick="openPopup('Tenun Ikat','Tenun Ikat adalah teknik menenun kain tradisional di mana benang diikat dan dicelup (dyeing) terlebih dahulu sebelum ditenun menjadi kain. Proses pengikatan ini dilakukan untuk melindungi benang dari pewarna, sehingga menghasilkan pola-pola geometris yang teratur dan unik setelah ditenun.')" data-aos="fade-up" data-aos-delay="100">
+        <img src="tenunikat.jpg">
+        <h3>Tenun Ikat</h3>
+    </div>
+
+    <div class="card" data-title="Topeng Betawi" data-category="seni" onclick="openPopup('Topeng Betawi','Topeng Betawi adalah kesenian rakyat khas Jakarta (Betawi) yang menggabungkan unsur tarian, teater, musik (gambang kromong), dan tentunya penggunaan topeng. Pertunjukan ini bersifat komedi, spontan, dan seringkali membawakan cerita-cerita tentang kehidupan sehari-hari atau legenda lokal.')" data-aos="fade-up" data-aos-delay="200">
+        <img src="topengbetawi.jpg">
+        <h3>Topeng Betawi</h3>
+    </div>
+
+    <div class="card" data-title="Kecapi" data-category="musik" onclick="openPopup('Kecapi','Kecapi adalah alat musik tradisional Sunda (Jawa Barat) yang tergolong dalam kelompok kordofon petik atau sitar.')" data-aos="fade-up" data-aos-delay="300">
+        <img src="KECAPI.JPG">
+        <h3>Kecapi</h3>
+    </div>
+    
+    <div class="card" data-title="Rambu solo" data-category="upacara" onclick="openPopup('rambu solo','Rambu Solo adalah upacara adat pemakaman masyarakat Toraja, Sulawesi Selatan. Upacara ini diselenggarakan dengan tujuan untuk menghormati dan mengantarkan arwah orang yang telah meninggal menuju alam baka')" data-aos="fade-up">
+        <img src="RAMBU SOLO.webp">
+        <h3>Rambu Solo</h3>
+    </div>
+
+    <div class="card" data-title="Rumah Joglo" data-category="rumahadat" onclick="openPopup('Rumah Joglo','Rumah Joglo adalah rumah tradisional (adat) masyarakat Jawa yang terkenal dengan arsitekturnya yang khas, terutama pada bagian atapnya yang berbentuk trapesium dan meninggi di bagian tengah.')" data-aos="fade-up" data-aos-delay="100">
+        <img src="RUMAHJOGLO.JPG">
+        <h3>Rumah Joglo</h3>
+    </div>
+
+    <div class="card" data-title="Gamelan" data-category="musik" onclick="openPopup('Gamelan','Gamelan adalah ansambel (gabungan) musik tradisional yang menonjol dari Jawa, Sunda (Jawa Barat), dan Bali. Musik Gamelan didominasi oleh instrumen perkusi logam (metalofon), seperti gong, kenong, dan saron. Ia memainkan peranan sentral dalam upacara adat, mengiringi tarian, wayang, dan pertunjukan teater, serta memiliki filosofi yang dalam mengenai keselarasan dan keseimbangan bunyi.')" data-aos="fade-up" data-aos-delay="200">
+        <img src="GAMELAN.JPG">
+        <h3>Gamelan</h3>
+    </div>
+
+    <div class="card" data-title="Badik" data-category="senjata" onclick="openPopup('Badik','Badik adalah senjata tradisional berbentuk pisau atau belati yang berasal dari masyarakat Bugis dan Makassar di Sulawesi Selatan. Badik memiliki ciri khas berupa bilah yang pendek, runcing, dan salah satu sisinya tajam, serta sarung dan gagang yang sering dihiasi ukiran.')" data-aos="fade-up" data-aos-delay="300">
+        <img src="BADIKSULAWESI SELATAN.JPG">
+        <h3>Badik</h3>
+    </div>
+
+    <div class="card" data-title="ondel ondel" data-category="seni" onclick="openPopup('ondel ondel','Ondel-Ondel adalah boneka raksasa khas dari Betawi (Jakarta) yang terbuat dari kerangka bambu dan dimainkan oleh orang yang berada di dalamnya. Boneka ini memiliki wajah yang dicat tebal (merah untuk laki-laki, putih untuk perempuan) dan dihiasi rambut ijuk serta pakaian adat Betawi.')" data-aos="fade-up">
+        <img src="ondel.jpg">
+        <h3>Ondel Ondel</h3>
+    </div>
+
+    <div class="card" data-title="Rumah Gadang" data-category="rumahadat" onclick="openPopup('Rumah Gadang','Rumah Gadang adalah rumah tradisional Minangkabau dengan atap melengkung menyerupai tanduk kerbau, berfungsi sebagai tempat tinggal keluarga besar dan pusat adat.')" data-aos="fade-up" data-aos-delay="100">
+        <img src="rumahgadang.jpg">
+        <h3>Rumah Gadang</h3>
+    </div>
+
+    <div class="card" data-title="Batik" data-category="seni" onclick="openPopup('Batik','kain khas indonesia dengan corak yang berbeda setiap daerah.')" data-aos="fade-up" data-aos-delay="200">
+        <img src="batik.jpg.jpg">
+        <h3>Batik</h3>
+    </div>
+
+    <div class="card" data-title="Rencong" data-category="senjata" onclick="openPopup('Rencong','Senjata tradisional Aceh...')" data-aos="fade-up" data-aos-delay="300">
+        <img src="RENCONG ACEHSENJATA.JPG">
+        <h3>Rencong</h3>
+    </div>
+    
+    <div class="card" data-title="Tari Saman" data-category="seni"
+    onclick="openPopup('Tari Saman','Tari Saman berasal dari Aceh dan dikenal sebagai “Tari Seribu Tangan”. Tarian ini menonjolkan kekompakan, ritme cepat, dan gerakan serempak penarinya. Biasanya dibawakan dalam acara adat dan penyambutan tamu penting.')"
+    data-aos="fade-up">
+    <img src="tarisaman.jpg">
+    <h3>Tari Saman</h3>
+</div>
+
+<div class="card" data-title="Rumah Lamin" data-category="rumahadat"
+    onclick="openPopup('Rumah Lamin','Rumah Lamin adalah rumah adat suku Dayak di Kalimantan Timur. Bentuknya memanjang seperti aula besar dan dihiasi ukiran Dayak dengan warna hitam, merah, dan kuning. Rumah ini juga menjadi pusat kegiatan adat.')"
+    data-aos="fade-up" data-aos-delay="100">
+    <img src="rumahlamin.jpg">
+    <h3>Rumah Lamin</h3>
+</div>
+
+<div class="card" data-title="Kolintang" data-category="musik"
+    onclick="openPopup('Kolintang','Kolintang adalah alat musik perkusi kayu dari Minahasa, Sulawesi Utara. Instrumennya disusun seperti bilah-bilah dan dimainkan dengan cara dipukul. Sering dipakai dalam acara adat, musik gereja, dan pertunjukan modern.')"
+    data-aos="fade-up" data-aos-delay="200">
+    <img src="kolintang.jpg">
+    <h3>Kolintang</h3>
+</div>
+
+<div class="card" data-title="Mandau" data-category="senjata"
+    onclick="openPopup('Mandau','Mandau adalah senjata tradisional suku Dayak yang digunakan untuk berburu dan berperang. Bilahnya tajam dengan ukiran khas, sementara sarungnya dihiasi bulu dan ukiran spiritual sebagai simbol keberanian.')"
+    data-aos="fade-up" data-aos-delay="300">
+    <img src="manadau.jpg">
+    <h3>Mandau</h3>
+</div>
+
+<div class="card" data-title="Tabuik" data-category="upacara"
+    onclick="openPopup('Tabuik','Tabuik adalah upacara tradisional di Pariaman, Sumatra Barat, untuk memperingati Asyura. Puncaknya adalah arak-arakan “tabuik”, menara besar yang dihiasi ornamen megah sebelum akhirnya dihanyutkan ke laut sebagai simbol pengorbanan.')"
+    data-aos="fade-up">
+    <img src="upacaratabuik.jpg">
+    <h3>Upacara Tabuik</h3>
+</div>
+
+<div class="card" data-title="Wayang Golek" data-category="seni"
+    onclick="openPopup('Wayang Golek','Wayang Golek adalah teater boneka kayu asal Sunda. Tokohnya dibuat dari kayu dengan pakaian adat, dan dimainkan oleh dalang dengan iringan gamelan. Ceritanya biasanya tentang epos Ramayana, Mahabrata, atau kisah lokal.')"
+    data-aos="fade-up" data-aos-delay="100">
+    <img src="wayanggolek.jpg">
+    <h3>Wayang Golek</h3>
+</div>
+
+<div class="card" data-title="Rumah Bolon" data-category="rumahadat"
+    onclick="openPopup('Rumah Bolon','Rumah Bolon adalah rumah adat Batak Toba dengan bentuk panggung dan atap melengkung. Menjadi simbol persatuan keluarga dan budaya Batak.')"
+    data-aos="fade-up">
+    <img src="rumahbolon.jpg">
+    <h3>Rumah Bolon</h3>
+</div>
+
+<div class="card" data-title="Rumah Panggung Melayu" data-category="rumahadat"
+    onclick="openPopup('Rumah Panggung Melayu','Rumah adat Melayu berbentuk panggung untuk menghadapi banjir dan menjaga sirkulasi udara. Ornamen ukirannya menunjukkan status sosial pemilik.')"
+    data-aos="fade-up" data-aos-delay="100">
+    <img src="rumahmelayu.jpg">
+    <h3>Rumah Melayu</h3>
+</div>
+
+<div class="card" data-title="Rumah Walewangko" data-category="rumahadat"
+    onclick="openPopup('Rumah Walewangko','Rumah Walewangko berasal dari Minahasa, Sulawesi Utara. Rumah panggung kayu ini melambangkan kerja sama masyarakat Minahasa.')"
+    data-aos="fade-up" data-aos-delay="200">
+    <img src="rumahwalewangko.jpg">
+    <h3>Rumah Walewangko</h3>
+</div>
+
+<div class="card" data-title="Belati Badui" data-category="senjata"
+    onclick="openPopup('Belati Badui','Belati Badui adalah senjata tradisional suku Badui Banten. Digunakan untuk keperluan sehari-hari dan upacara, serta melambangkan keberanian.')"
+    data-aos="fade-up">
+    <img src="belatibadui.jpg">
+    <h3>Belati Badui</h3>
+</div>
+
+<div class="card" data-title="Parang Ilang" data-category="senjata"
+    onclick="openPopup('Parang Ilang','Parang Ilang adalah senjata suku Dayak Ngaju. Gagangnya dihias ukiran dan bulu burung, serta dipakai untuk pertahanan diri dan upacara adat.')"
+    data-aos="fade-up" data-aos-delay="100">
+    <img src="parangilang.jpg">
+    <h3>Parang Ilang</h3>
+</div>
+
+<div class="card" data-title="Klewang" data-category="senjata"
+    onclick="openPopup('Klewang','Klewang adalah pedang pendek asal Sumatra dan Melayu. Dulu digunakan dalam perang dan kini menjadi simbol budaya dan identitas daerah.')"
+    data-aos="fade-up" data-aos-delay="200">
+    <img src="klewang.jpg">
+    <h3>Klewang</h3>
+</div>
+
+<div class="card" data-title="Upacara Kasada" data-category="upacara"
+    onclick="openPopup('Upacara Kasada','Upacara Kasada adalah ritual masyarakat Suku Tengger di Jawa Timur. Dilaksanakan di Gunung Bromo, masyarakat mempersembahkan hasil bumi ke kawah sebagai ungkapan syukur kepada Sang Hyang Widhi serta menghormati leluhur Roro Anteng dan Joko Seger.')"
+    data-aos="fade-up">
+    <img src="upacarakasada.jpg">
+    <h3>Upacara Kasada</h3>
+</div>
+
+<div class="card" data-title="Upacara Seren Taun" data-category="upacara"
+    onclick="openPopup('Seren Taun','Seren Taun adalah upacara adat masyarakat Sunda, khususnya di Kasepuhan Banten Kidul, untuk mensyukuri hasil panen dan memohon berkah masa tanam berikutnya. Acara ini diisi musik angklung, tari tradisional, dan doa adat.')"
+    data-aos="fade-up" data-aos-delay="100">
+    <img src="serentaun.jpg">
+    <h3>Seren Taun</h3>
+</div>
+
+<div class="card" data-title="Upacara Pasola" data-category="upacara"
+    onclick="openPopup('Pasola','Pasola adalah ritual adat masyarakat Sumba yang melibatkan permainan perang tombak dari atas kuda. Dilaksanakan untuk menyambut musim tanam dan menghormati roh nenek moyang, serta dihubungkan dengan ritual Wula Podu.')"
+    data-aos="fade-up" data-aos-delay="200">
+    <img src="pasola.jpg">
+    <h3>Pasola</h3>
+</div>
+
+<div class="card" data-title="Upacara Tiwah" data-category="upacara"
+    onclick="openPopup('Tiwah','Tiwah adalah upacara kematian suku Dayak Kaharingan di Kalimantan. Ritual ini menuntun roh orang yang telah meninggal menuju Lewu Liau (alam arwah). Biasanya melibatkan tarian, musik, sesajen, dan pemindahan tulang ke sandung.')"
+    data-aos="fade-up" data-aos-delay="300">
+    <img src="tiwah.jpg">
+    <h3>Tiwah</h3>
+</div>
+
+<div class="card" data-title="Upacara Sekaten" data-category="upacara"
+    onclick="openPopup('Sekaten','Sekaten adalah upacara adat di Yogyakarta dan Surakarta untuk memperingati kelahiran Nabi Muhammad. Tradisi ini mencakup iring-iringan gamelan pusaka, pasar malam, serta prosesi Garebeg di Kraton.')"
+    data-aos="fade-up">
+    <img src="sekatan.jpg">
+    <h3>Sekaten</h3>
+</div>
+
+<div class="card" data-title="Gondang Batak" data-category="musik"
+    onclick="openPopup('Gondang Batak','Gondang adalah ensambel musik tradisional Batak Toba yang terdiri dari taganing, seruling, dan ogung. Musik ini digunakan dalam upacara adat dan ritual keagamaan.')"
+    data-aos="fade-up">
+    <img src="gondangbatak.jpg">
+    <h3>Gondang Batak</h3>
+</div>
+
+<div class="card" data-title="Talempong" data-category="musik"
+    onclick="openPopup('Talempong','Talempong adalah alat musik Minangkabau berupa gong kecil dari logam yang dimainkan dengan cara dipukul. Musiknya ritmis dan dipakai dalam tari-tarian adat.')"
+    data-aos="fade-up" data-aos-delay="100">
+    <img src="talempong.jpg">
+    <h3>Talempong</h3>
+</div>
+
+<div class="card" data-title="Serunai" data-category="musik"
+    onclick="openPopup('Serunai','Serunai adalah alat musik tiup tradisional dari Sumatra dan Kalimantan. Menghasilkan nada melengking dan sering digunakan dalam upacara adat.')"
+    data-aos="fade-up" data-aos-delay="200">
+    <img src="serunai.jpg">
+    <h3>Serunai</h3>
+</div>
+
+
+</section>
+
+<!-- ====================== VIDEO BUDAYA ====================== -->
+<section id="videos" class="video-section" data-aos="fade-up">
+    <h2>Video Budaya Indonesia</h2>
+    <p>Nikmati berbagai video budaya Indonesia yang menampilkan tarian, upacara adat, musik tradisional, dan keindahan alam.</p>
+    
+    <div class="video-container">
+        <video controls width="100%">
+            <source src="indonesia.mp4" type="video/mp4">
+            Browser Anda tidak mendukung video ini.
+        </video>
+    </div>
+</section>
+
+<!-- ====================== MUSIK ====================== -->
+<section id="musik" class="music-section" data-aos="fade-in">
+    <h2>Musik Tradisional</h2>
+    <audio id="bgMusic" src="MUSIKTRADISIONAL.mp3" loop></audio>
+    <button id="musicToggle" class="btn-primary">🎧 Putar Musik</button>
+</section>
+
+<!-- ====================== TENTANG ====================== -->
+<section id="about" class="about-section" data-aos="fade-up">
+    <h2>Tentang Budaya Nusantara</h2>
+    <p>Website ini bertujuan memperkenalkan kekayaan budaya Indonesia, dari seni, musik, rumah adat, senjata tradisional, hingga upacara adat. Jelajahi dan kenali keunikan setiap daerah di Indonesia melalui galeri interaktif kami.</p>
+</section>
+
+<!-- ====================== KONTAK ====================== -->
+<section id="contact" class="contact-section" data-aos="fade-up">
+    <h2>Kontak Kami</h2>
+    <p>Jika Anda memiliki pertanyaan atau ingin berkolaborasi, silakan hubungi kami:</p>
+    <ul>
+        <li>Email: <a href="mailto:info@budayanusantara.id">info@budayanusantara.id</a></li>
+        <li>Telepon/WA: <a href="tel:+6281234567890">+62 8118901908</a></li>
+        <li>Instagram: <a href="https://instagram.com/budayanusantara" target="_blank">@budayanusantara</a></li>
+        <li>Facebook: <a href="https://facebook.com/budayanusantara" target="_blank">Budaya Nusantara</a></li>
+    </ul>
+    <form id="contactForm">
+        <input type="text" name="name" placeholder="Nama" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Pesan Anda" required></textarea>
+        <button type="submit" class="btn-primary">Kirim Pesan</button>
+    </form>
+</section>
+
+<!-- ====================== POPUP ====================== -->
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span id="popup-close">&times;</span>
+        <h2 id="popup-title"></h2>
+        <p id="popup-desc"></p>
+    </div>
+</div>
+
+<!-- ====================== BACK TO TOP ====================== -->
+<button id="backToTop">⬆</button>
+
+<!-- ====================== FOOTER ====================== -->
+<footer class="footer" data-aos="fade-up">
+    <p>&copy; 2025 Budaya Nusantara. Semua hak cipta dilindungi.</p>
+    <div class="social-footer">
+        <a href="https://instagram.com/budayanusantara" target="_blank">Instagram</a> |
+        <a href="https://facebook.com/budayanusantara" target="_blank">Facebook</a> |
+        <a href="https://twitter.com/budayanusantara" target="_blank">Twitter</a>
+    </div>
+</footer>
+
+<!-- AOS SCRIPT -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<!-- MAIN JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
